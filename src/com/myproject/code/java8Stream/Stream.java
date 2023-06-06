@@ -21,7 +21,7 @@ public class Stream {
         //findDuplicateElement(listInt);
         // findFirstElement(listInt);
         // find the first element in stream
-      // countTotalElement(listInt);
+        // countTotalElement(listInt);
      // findMinMaxAverage(listInt);
       //findFirstNonRepeatedCharacter(inputStr);
         // sortTheElement(listInt);
@@ -56,7 +56,8 @@ public class Stream {
     }
 
     private static void convertNameToSet(List<Student> studentList) {
-        Set<String>  strSet= studentList.stream().map(Student::getName).collect(Collectors.toCollection((TreeSet::new)));
+        Set<String>  strSet= studentList.stream().map(Student::getName)
+                .collect(Collectors.toCollection((TreeSet::new)));
         for(String str:strSet){
             System.out.println(str);
         }

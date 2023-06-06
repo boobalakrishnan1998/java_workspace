@@ -15,9 +15,7 @@ public class StringPermutations {
     }
 
     private static void permuatations(String perm, String word) {
-
         if(word.isEmpty()){
-
             System.out.println(perm);
         }
         for(int i=0;i<word.length();i++){
@@ -37,8 +35,6 @@ public class StringPermutations {
             String leftSubstr=word.substring(i+1);
             al.addAll(permuataion(str,rightSubstr+leftSubstr));
         }
-
-
         return al;
     }
 

@@ -23,7 +23,6 @@ public class SortingArray {
             array[i] = sc.nextInt();
         }
 
-
         sortArrayNormal(array);
         sortArrayJava8(array);
     }
